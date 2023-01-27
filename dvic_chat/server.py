@@ -4,7 +4,7 @@ from threading import Thread
 from time import sleep
 import traceback
 
-from dvic_chat.protocol import DataStream, Packet1Auth, Packet2Message
+from protocol import DataStream, Packet1Auth, Packet2Message
 
 class ChatClient():
     def __init__(self, sck: socket.socket, addr, srv: "DVICChatServer") -> None:
